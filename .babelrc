@@ -1,0 +1,64 @@
+{
+  "env": {
+    "development": {
+      "presets": ["next/babel"],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./src/components",
+              "actions": "./src/actions",
+              "reducers": "./src/reducers",
+              "pages": "./pages"
+            }
+          }
+        ]
+      ]
+    },
+    "production": {
+      "presets": ["next/babel"],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./src/components",
+              "actions": "./src/actions",
+              "reducers": "./src/reducers",
+              "pages": "./pages"
+            }
+          }
+        ]
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "next/babel",
+          {
+            "preset-env": {
+              "modules": "commonjs"
+            }
+          }
+        ]
+      ],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "alias": {
+              "components": "./src/components",
+              "actions": "./src/actions",
+              "reducers": "./src/reducers",
+              "pages": "./pages"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
