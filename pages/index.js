@@ -24,7 +24,7 @@ class Home extends Component {
     console.log("res", this.props);
     return (
       <div>
-        <h2>Hello drew</h2>
+        <h2>Hello drew test 2</h2>
         <CommentBox />
         <CommentList />
         <button onClick={this.handleClick}>test</button>

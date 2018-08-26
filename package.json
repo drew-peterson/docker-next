@@ -1,6 +1,5 @@
 {
   "name": "create-next-example-app",
-  "license": "MIT",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
